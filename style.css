@@ -115,7 +115,83 @@ p{
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .col-4 img{
     width: 100%;
+}
+.col-4 h4,
+.col-4 .rating,
+.col-4 p{
+    margin-top: 10px;
+}
+.col-1 img{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 30%;
+        margin-bottom: 20px;
+}
+.col-1 h3,
+.col-1 .rating,
+.col-1 p{
+    margin-top: 10px;
+    text-align: center;
+}
+.NewArrival{
+    background: radial-gradient(#fff, #ffd6d6); ;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+.title::after{
+    content: '';
+    background: black;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.title2{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+.title2::after{
+    content: '';
+    background: black;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.rating .far{
+    color: brown;
+}
+.rating .fas {
+    color: brown;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
