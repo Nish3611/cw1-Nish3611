@@ -237,4 +237,46 @@ p{
   .contactform button[type="submit"]:hover {
     background: #8b0000;
   }
-  
+.about-home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-home .image{
+    flex:1 1 41rem;
+}
+.about-home .image img{
+    width: 100%;
+}
+.about-home .content{
+    flex:1 1 41rem;
+    padding: 3rem;
+}
+.about-home .content h3{
+    font-size: x-large;
+    color: black;
+}
+.about-home .content p{
+    font-size: medium;
+    color: #333;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.title3{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+.title3::after{
+    content: '';
+    background: black;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
