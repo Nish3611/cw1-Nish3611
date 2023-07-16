@@ -1,3 +1,10 @@
+<?php
+
+include 'process.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +24,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/product.html">Products</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                    <li><a href="/login.html">Login</a></li>
+                    <li><a href="/index.php">Home</a></li>
+                    <li><a href="/product.php">Products</a></li>
+                    <li><a href="/about.php">About</a></li>
+                    <li><a href="/contact.php">Contact</a></li>
+                    <li><a href="/login.php">Login</a></li>
                 </ul>
 
             </nav>
@@ -42,24 +49,23 @@
                         <span onclick="register()">Register</span>
                         <hr id="indicator">
                     </div>
-                    <form id="LoginForm">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="">Forgot password</a>
+                    <form id="LoginForm" action="process.php" method="POST">
+                       <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit" name="login" class="btn">Login</button>
+                        <a href="">Forgot password ?</a>
                     </form>
-                    
-                    <form id="Regform">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="password">
-                        <button type="submit" class="btn">Register</button>
+                    <form id="RegForm" action="process.php" method="POST">
+                          <input type="text" name="username" placeholder="Username">
+                          <input type="email" name="email" placeholder="Email">
+                          <input type="password" name="password" placeholder="Password">
+                          <button type="submit" name="register" class="btn">Register</button>
                     </form>
                 </div>
             </div>
          </div>
      </div>
-    </div>
+    </div>      
 </div>
     <footer>
         <div class="container">
@@ -85,12 +91,12 @@
     </script>
     <!---js for toggle form-->
     <script>
-        var Loginform = document.getElementById("LoginForm");
-        var Regform = document.getElementById("Regform");
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
         var indicator = document.getElementById("indicator");
 
             function register(){
-                Regform.style.transform = "translateX(0px)";
+                RegForm.style.transform = "translateX(0px)";
                 LoginForm.style.transform = "translateX(0px)";
                 indicator.style.transform = "translateX(100px)";
                 
@@ -98,8 +104,8 @@
 
             function login(){
 
-                Regform.style.transform = "translateX(300px)";
-                Loginform.style.transform = "translateX(300px)";
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
                 indicator.style.transform = "translateX(0px)";
                 
             }

@@ -280,6 +280,7 @@ p{
     left: 50%;
     transform: translate(-50%);
 }
+/*---Login-page*/
 .login-page{
     padding: 50px 0;
     background: radial-gradient(#fff, #ffd6d6);
@@ -333,10 +334,10 @@ form .btn:focus{
 .btn{
     background: brown;
 }
-#Loginform{
+#LoginForm{
     left: -300px;
 }
-#Regform{
+#RegForm{
     left: 0;
 }
 form a{

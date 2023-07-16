@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+    
+    
     <div class="whole">
     <div class="container">
         <div class="navbar">
@@ -17,16 +19,30 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/product.html">Products</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+
+                    <li><a href="/index.php">Home</a></li>
+                    <!-- <li><a href="/product.html">Products</a></li> -->
+                    <li><a href="./about.php">About</a></li>
+                    <li><a href="./contact.php">Contact</a></li>
+                    <li><a href="login.php">Login</a></li>
                 </ul>
     
-                <button class="button">Login</button>
             </nav>
+          
         </div>
-       
+        <div class="row">
+            <div class="col-2">
+                <h1>Comfort with Style<br>BackPack!</h1>
+                <p>Discover top designer bag leading towards comfortness with extra features which work like luggage.</p>
+                <a href="" class="button">Explore it &#9758;</a> 
+            </div>
+            <div class="col-2">
+                <div class="image-container">
+                    <img src="images/image1.png" alt="image1" class="image">
+                    <img src="images/backpack.png" alt="image 1 hover" class="image-hover">
+                </div>
+            </div>
+        </div>
     </div>
  </div>   
     <!-- features Products -->
@@ -102,10 +118,24 @@
         </div>
     </div>
 </section>
+
+<section class="about-home">
+    <div class="image">
+        <img src="images/stylish.jpg" alt="Stylish Bags">
+    </div>
+    <div class="content">
+        <h3 class="title3">About Us</h3>
+        <p>Welcome to Comfort Store Bag! At Comfort Store Bag, we understand the importance of combining fashion with functionality. That's why we have curated a collection of bags that effortlessly blend practicality.</p>
+        <p>Comfort Store Bag was born out of a passion for offering high-quality bags that enhance your daily life. We began our journey with a simple idea: to create bags that make your everyday routines more convenient.</p>
+    </div>
+    
+</section>
+
     <footer>
         <div class="container">
             <p>&copy; 2023 Comfort Store. All rights reserved.</p>
         </div>
     </footer>
+   
 </body>
 </html>
