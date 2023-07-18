@@ -18,23 +18,31 @@
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <!-- <li><a href="product.php">Products</a></li> -->
+                    <li><a href="product.php">Products</a></li>
                     <li><a href="about.php">About</a></li>
                     <li><a href="contact.php">Contact</a></li>
-                    <li><a href="Register.php">Register</a></li>
+                
                 </ul>
+
             </nav>
         </div>
-        <section class="about-home">
-            <div class="image">
-                <img src="images/stylish.jpg" alt="Stylish Bags">
-            </div>
-            <div class="content">
-                <h3 class="title3">About Us</h3>
-                <p>Welcome to Comfort Store Bag! At Comfort Store Bag, we understand the importance of combining fashion with functionality. That's why we have curated a collection of bags that effortlessly blend practicality.</p>
-                <p>Comfort Store Bag was born out of a passion for offering high-quality bags that enhance your daily life. We began our journey with a simple idea: to create bags that make your everyday routines more convenient.</p>
-            </div>
-            
-        </section>
+       
+    </div>
+<!---register-page-->
+<div class="form-container">
+    <form action="" method="post">
+        <h3>register now</h3>
+        <input type="text" name="name" required placeholder="enter you name">
+        <input type="email" name="email" required placeholder="enter you email">
+        <input type="password" name="password" required placeholder="enter you password">
+        <input type="password" name="cpassword" required placeholder="confirm your password">
+        <select name="user_type">
+            <option value="user">user</option>
+            <option value="admin">admin</option>
+        </select>
+        <input type="submit" name="submit" value="register now" class="form-btn">
+        <p>already have an account? <a href="login.php">login now</a></p>
+    </form>
+</div>
 </body>
 </html>

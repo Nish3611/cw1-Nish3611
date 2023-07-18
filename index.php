@@ -6,6 +6,7 @@
     <title>Comfort Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
 </head>
 <body>
     
@@ -20,11 +21,11 @@
             <nav>
                 <ul>
 
-                    <li><a href="/index.php">Home</a></li>
-                    <!-- <li><a href="/product.html">Products</a></li> -->
-                    <li><a href="./about.php">About</a></li>
-                    <li><a href="./contact.php">Contact</a></li>
-                    <li><a href="login.php">Login</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <!-- <li><a href="/product.php">Products</a></li> -->
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="register.php">Register</a></li>
                 </ul>
     
             </nav>
@@ -127,15 +128,22 @@
         <h3 class="title3">About Us</h3>
         <p>Welcome to Comfort Store Bag! At Comfort Store Bag, we understand the importance of combining fashion with functionality. That's why we have curated a collection of bags that effortlessly blend practicality.</p>
         <p>Comfort Store Bag was born out of a passion for offering high-quality bags that enhance your daily life. We began our journey with a simple idea: to create bags that make your everyday routines more convenient.</p>
-    </div>
-    
+    </div>    
 </section>
+<footer>
+    <div class="footer-content">
+        <img src="images/comfort.png" alt="Comfort Store Logo">
+        <p>Purpose to make the benefits of backpack.</p>
+    </div>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Comfort Store. All rights reserved.</p>
+    </div>
+</footer>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Comfort Store. All rights reserved.</p>
-        </div>
-    </footer>
-   
 </body>
 </html>
