@@ -1,5 +1,7 @@
 <?php
-if (!isset($_SESSION['username'])){
+session_start();
+
+if (!isset($_SESSION['user_type'])){
     header('location:login.php');
 }
 ?>
