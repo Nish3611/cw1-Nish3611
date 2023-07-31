@@ -21,22 +21,17 @@ if(isset($_POST['submit'])){
        if($row['user_type'] == 'admin'){
 
         $_SESSION['admin_name'] = $row['name'];
-<<<<<<< HEAD
         $_SESSION['user_type'] = 'admin';
         header('location: admin.php');
-=======
         header('location:admin.php');
->>>>>>> 59ae80a330e667051ce96a51a9f0c6f89d4c9b0d
 
        }elseif($row['user_type'] == 'user'){
 
         $_SESSION['user_name'] = $row['name'];
-<<<<<<< HEAD
         $_SESSION['user_type'] = 'user';
         header('location: product.php');
-=======
         header('location:user.php');
->>>>>>> 59ae80a330e667051ce96a51a9f0c6f89d4c9b0d
+
 
     }
     }else{
