@@ -23,14 +23,14 @@ if(isset($_POST['submit'])){
         $_SESSION['admin_name'] = $row['name'];
         $_SESSION['user_type'] = 'admin';
         header('location: admin.php');
-        header('location:admin.php');
+        exit();
 
        }elseif($row['user_type'] == 'user'){
 
         $_SESSION['user_name'] = $row['name'];
         $_SESSION['user_type'] = 'user';
         header('location: product.php');
-        header('location:user.php');
+        exit();
 
 
     }
@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
             <nav>
                 <ul>
                     <li><a href="index.php">Home</a></li>
-                    <!-- <li><a href="product.php">Products</a></li> -->
+                    <li><a href="product.php">Products</a></li>
                     <li><a href="about.php">About</a></li>
                     <li><a href="contact.php">Contact</a></li>
                     
