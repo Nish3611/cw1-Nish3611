@@ -1,8 +1,9 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['user_type'])){
-    header('location:login.php');
+if (!isset($_SESSION['user_name'])){
+    header('location: login.php');
+    exit();
 }
 ?>
 
