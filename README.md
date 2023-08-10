@@ -31,6 +31,19 @@ This is a basic user registration and login system implemented in PHP, designed 
 - User Login: Existing users can log in using their registered credentials.
 - User Dashboard: After successful login, users are directed to their dashboard, where they can view their account information and perform various user-specific tasks.
 
+## Admin User management
+The Admin User Management System has the following features:
+
+Admin Login: Users can log in as administrators to access the admin panel.
+
+User Listing: The system displays a list of users, including their ID, name, email, and user type.
+
+Modify User Details: Administrators can modify a user's name, email, and user type directly from the user list.
+
+Delete Users: Administrators have the ability to delete users from the system, removing their information from the database.
+
+Add New Users: The system provides a form to add new users, including their name, email, password, and user type.
+
 # Contact Form
 A contact form for users to submit their name, email, phone number, and a message.
 
