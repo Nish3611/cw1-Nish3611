@@ -39,6 +39,22 @@ if (isset($_POST['selected_user_id'])) {
     }
 }
 
+// Check if the "Add User" form was submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'add') {
+  $newName = mysqli_real_escape_string($conn, $_POST['new_name']);
+  $newEmail = mysqli_real_escape_string($conn, $_POST['new_email']);
+  $newPassword = md5($_POST['new_password']); // Hash the password using MD5
+  $newUserType = $_POST['new_user_type'];
+
+  // Insert new user into the database
+  $insertQuery = "INSERT INTO user_form (name, email, password, user_type) VALUES ('$newName', '$newEmail', '$newPassword', '$newUserType')";
+  mysqli_query($conn, $insertQuery);
+
+  // Redirect or perform any necessary actions after adding the user
+  // For example: header('location: admin.php');
+}
+
+
 // Fetch all users from the database
 $usersQuery = "SELECT * FROM user_form";
 $usersResult = mysqli_query($conn, $usersQuery);
@@ -118,6 +134,21 @@ $usersResult = mysqli_query($conn, $usersQuery);
   .btn:hover {
     background-color: #0056b3;
   }
+  .add-user-button {
+    padding: 8px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #28a745; /* Green */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-user-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
     </style>
 </head>
 <body>
@@ -154,6 +185,28 @@ $usersResult = mysqli_query($conn, $usersQuery);
                 </tr>
             <?php } ?>
         </table>
+       <!-- Add User Section -->
+<h2>Add User</h2>
+<form action="" method="post">
+    <label for="new_name">Name:</label>
+    <input type="text" id="new_name" name="new_name" required>
+    
+    <label for="new_email">Email:</label>
+    <input type="email" id="new_email" name="new_email" required>
+
+    <label for="new_password">Password:</label>
+    <input type="password" id="new_password" name="new_password" required>
+    
+    <label for="new_user_type">User Type:</label>
+    <select id="new_user_type" name="new_user_type">
+        <option value="user">user</option>
+        <option value="admin">admin</option>
+    </select>
+    
+    <button type="submit" name="action" value="add" class="add-user-button">Add User</button>
+
+</form>
+
         <a href="logout.php" class="btn">Logout</a>
     </div>
     

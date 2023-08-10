@@ -161,7 +161,7 @@ footer {
             <div class="row">
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nobis adipisci nesciunt cum exercitationem reprehenderit nulla recusandae! Eius distinctio deleniti earum, iure sit reiciendis. Vel eius laboriosam dolorum nihil ex?</p>
+                    <p>Impressive service! Exceeded expectations with their attention to detail and dedication. Highly recommended.</p>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -174,7 +174,7 @@ footer {
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nobis adipisci nesciunt cum exercitationem reprehenderit nulla recusandae! Eius distinctio deleniti earum, iure sit reiciendis. Vel eius laboriosam dolorum nihil ex?</p>
+                    <p>Exceptional support! Professional and responsive team, providing innovative solutions. Highly endorse.</p>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -187,7 +187,7 @@ footer {
                 </div>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nobis adipisci nesciunt cum exercitationem reprehenderit nulla recusandae! Eius distinctio deleniti earum, iure sit reiciendis. Vel eius laboriosam dolorum nihil ex?</p>
+                    <p>Highly pleased! Proficient and dedicated team delivering exceptional results. Enthusiastically recommend.</p>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
